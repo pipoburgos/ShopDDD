@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Stock.Api.Products
 {
-    public partial class ProductsController : ControllerBase
+    public partial class ProductsController
     {
         /// <summary>
         /// Create a product

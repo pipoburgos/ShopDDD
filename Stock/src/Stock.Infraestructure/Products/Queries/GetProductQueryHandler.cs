@@ -8,7 +8,7 @@ using SharedKernel.Infrastructure.Data.Dapper.Queries;
 using SharedKernel.Infrastructure.Data.EntityFrameworkCore.Queries;
 using Stock.Application.Products.Queries;
 using Stock.Domain.Products;
-using Stock.Infraestructure.Data.EFCore;
+using Stock.Infrastructure.Data.EFCore;
 
 namespace Stock.Infrastructure.Products.Queries
 {
@@ -37,7 +37,7 @@ namespace Stock.Infrastructure.Products.Queries
                          .GetQuery<Product>()
                          .Select(p => p.Id)
                          .Where(id => id == query.Id)
-                         .SingleOrDefaultAsync<Guid>(cancellationToken);
+                         .SingleOrDefaultAsync(cancellationToken);
 
             // TODO: For pagination paginarToPagedListAsync
         }

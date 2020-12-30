@@ -1,7 +1,7 @@
 ﻿using FluentValidation;
 using Stock.Application.Products.Commands;
 
-namespace Stock.Infrastructure.Products.Validators
+namespace Stock.Infrastructure.Products.Queries
 {
     /// <summary>
     /// Valida el comando

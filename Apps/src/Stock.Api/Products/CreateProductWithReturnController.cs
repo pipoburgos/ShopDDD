@@ -1,14 +1,14 @@
-﻿using System.Threading;
-using Microsoft.AspNetCore.Mvc;
+﻿using System;
+using System.Threading;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
 using SharedKernel.Application.Cqrs.Commands;
 using Stock.Application.Products.Commands;
-using System;
 
-namespace Stock.Api.Controllers
+namespace Stock.Api.Products
 {
     // Why partial class?: https://stackoverflow.com/questions/53505197/net-core-2-1-swashbuckle-group-controllers-by-area
-    public partial class ProductsController : ControllerBase
+    public partial class ProductsController
     {
         // FromServices = Injection for method, no inject in constructor because have more methods and can break all
 
